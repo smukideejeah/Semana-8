@@ -12,7 +12,7 @@ def selected():
     if var.get():
         print("Seleccionado")
     else:
-        print("seleccionado")
+        print("NO seleccionado")
 
 
 window = tk.Tk()
