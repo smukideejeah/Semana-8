@@ -9,9 +9,16 @@
 import tkinter as tk
 
 def selected():
-    sel = list.curselection()
-    for index in sel:
-        print(list.get(index))
+    sel = var.get()
+    match sel:
+        case 1:
+            print("Opción 1")
+        case 2:
+            print("Opción 2")
+        case 3:
+            print("Opción 3")
+        case _:
+            print("Opción no válida")
 
 
 window = tk.Tk()
